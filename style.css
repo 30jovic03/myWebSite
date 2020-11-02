@@ -324,7 +324,7 @@ footer {
   }
 
   .nav-list a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 1rem;
     padding: 0.5rem;
   }
@@ -365,6 +365,7 @@ footer {
   .navigation.background {
     position: relative;
     left: 30px;
+    top: 90px;
   }
 
   ul.desktop-icons {
@@ -443,14 +444,20 @@ footer {
 }
 
 .contact-items {
+  color: white;
   position: relative;
-  top: 100px;
-  left: 200px;
+  top: 40vh;
+  left: 10vw;
+}
+
+.contact-items li a i {
+  padding-right: 20px;
 }
 
 .contact-links {
   position: relative;
-  left: 100px;
+  top: 50vh;
+  left: 10vw;
   display: flex;
   width: 100%;
   margin-top: 8rem;
@@ -466,4 +473,21 @@ footer {
 
 .contact-details:hover {
   transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    background-position-x: -500px;
+    font-size: 25px;
+  }
+
+  .contact-items {
+    top: 50vh;
+    left: 5vw;
+  }
+
+  .contact-links {
+    top: 55vh;
+    left: 5vw;
+  }
 }
