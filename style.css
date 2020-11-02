@@ -223,49 +223,98 @@ img {
 }
 
 
-.contact-section {
+.about-contact-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 45vh;
   padding: 0 2rem;
-  background: #ddd;
+  background: #aaa;
   box-shadow: 0 5px 10px 15px #ddd;
 }
 
-.contact-section-header > h2 {
+.about-contact-section-header > h2 {
   font-size: 5rem;
+  padding-top: 10rem;
 }
 
-.contact-section-header > p {
+.about-contact-section-header > p {
   font-style: italic;
 }
 
-.contact-links {
+.about-contact-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  grid-gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.circle-to-square-container {
+  background-color: #fff;
+  width: 49.5vw;
+  height: 500px;
+  top: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.circle-to-square {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  top: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease all;
+}
+
+.circle-to-square-container:hover .circle-to-square {
+      border-radius: 0%;
+      top: 165px;
+      width: 300px;
+      height: 170px;
+}
+
+.about .circle-to-square {
+  color: #161616;
+  background-color:#fff;
+  border: 10px solid #161616;
+}
+
+.contact {
+  background-color: #161616;
+}
+
+.contact .circle-to-square {
+  color: #fff;
+  background-color: #161616;
+  border: 10px solid #fff;
+}
+
+footer {
+  height: 12rem;
+  justify-content: center;
+  background: #aaa;
+}
+
+.mavis {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 980px;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-}
-
-.contact-details {
-  font-size: 2.4rem;
-  color: #000;
-  transition: transform 0.3s ease-out;
-  margin: 20px;
-}
-
-.contact-details:hover {
-  transform: translateY(-8px);
+  padding-top: 9rem;
 }
 
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .nav-bar {
     justify-content: center;
   }
@@ -275,8 +324,8 @@ img {
   }
 
   .nav-list a {
-    font-size: 1.7rem;
-    padding: 1.2rem;
+    font-size: 2.5rem;
+    padding: 0.5rem;
   }
 
   h1,
@@ -313,11 +362,11 @@ img {
   }
 
   ul.desktop-icons {
-    display: block;
+    display: unset;
   }
 
   ul.desktop-icons > li {
-      display: block;
+      display: unset;
   }
 
   ul.desktop-icons > li > a {
@@ -350,11 +399,64 @@ img {
   }
 
 
-  .contact-section-header > h2 {
+  .about-contact-section-header > h2 {
     font-size: 3rem;
   }
 
-  .contact-details {
+  .about-contact-details {
     font-size: 1.8rem;
   }
+
+  .circle-to-square-container {
+    height: 300px;
+    top: 80px;
+  }
+  
+  .circle-to-square {
+    height: 200px;
+    width: 200px;
+    top: 50px;
+  }
+
+  .circle-to-square-container:hover .circle-to-square {
+    border-radius: 0%;
+    top: 90px;
+    width: 200px;
+    height: 120px;
+  }
+}
+
+.contact-container {
+  font-size: 30px;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('.//src/office.webp');
+  background-size: cover;
+}
+
+.contact-items {
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.contact-links {
+  position: relative;
+  left: 100px;
+  display: flex;
+  width: 100%;
+  margin-top: 8rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  color: #fff;
+  transition: transform 0.3s ease-out;
+  margin: 20px;
+}
+
+.contact-details:hover {
+  transform: translateY(-8px);
 }
