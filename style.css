@@ -1,9 +1,7 @@
-
 * {
   margin: 0;
   padding: 0;
 }
-
 
 *,
 *::before,
@@ -11,10 +9,10 @@
   box-sizing: inherit;
 }
 
-*:not(ul,ol) {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+*:not(ul, ol) {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 html {
@@ -24,7 +22,7 @@ html {
 }
 
 body {
-  font-family:  sans-serif;
+  font-family: sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
@@ -86,9 +84,8 @@ img {
   background: #333;
 }
 
-
 .welcome-section {
-  background-image: url('/src/hexagonal.jpg');
+  background-image: url("/src/hexagonal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -109,7 +106,6 @@ img {
   font-style: italic;
 }
 
-
 .welcome-section .nav-icons {
   position: relative;
   top: 85vh;
@@ -118,61 +114,59 @@ img {
 }
 
 .navigation {
-    margin: auto;
-    transition: 0ms;
+  margin: auto;
+  transition: 0ms;
 }
 
 .navigation.background {
-    transition: 0ms;
+  transition: 0ms;
 }
 
 .desktop-icons {
-    box-sizing: border-box;
-    list-style: none;
-    transition: 0ms;
-    padding: 0px;
-    margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  transition: 0ms;
+  padding: 0px;
+  margin: 0px;
 }
 
 .desktop-icons > li {
-        display: inline-block;
-        transition: 0ms;
-    }
+  display: inline-block;
+  transition: 0ms;
+}
 
-    .desktop-icons > li > a {
-        height: calc(7vw + 30px);
-        width: auto;
-        display: inline-block;
-        text-decoration: none;
-        vertical-align: top;
-        text-align: center;
-        transition: 50ms;
-        color: #000000;
-    }
+.desktop-icons > li > a {
+  height: calc(7vw + 30px);
+  width: auto;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  text-align: center;
+  transition: 50ms;
+  color: #000000;
+}
 
 .desktop-icons > li > a > i {
-        transition: 300ms;
-    }
+  transition: 300ms;
+}
 
-    .desktop-icons > li > a:hover > i {
-        transition: 300ms;
-        color: #888;
-    }
+.desktop-icons > li > a:hover > i {
+  transition: 300ms;
+  color: #888;
+}
 
-        .desktop-icons > li > a > i {
-            font-size: calc(2vw + 30px);
-            display: inline-block;
-            transition: 50ms;
-            width: calc(12vw);
-        }
+.desktop-icons > li > a > i {
+  font-size: calc(2vw + 30px);
+  display: inline-block;
+  transition: 50ms;
+  width: calc(12vw);
+}
 
-        .icon-name {
-            font-size: calc(0.5vw + 10px);
-            margin-top: 10px;
-            display: block;
-        }
-
-
+.icon-name {
+  font-size: calc(0.5vw + 10px);
+  margin-top: 10px;
+  display: block;
+}
 
 .projects-section {
   text-align: center;
@@ -222,6 +216,19 @@ img {
   color: #888;
 }
 
+.projects-section h3 {
+  margin: 0 auto 50px auto;
+}
+
+.projects-section h3 a {
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+.projects-section h3 a:hover {
+  color: #888;
+  border-bottom: 3px solid #888;
+}
 
 .about-contact-section {
   display: flex;
@@ -278,15 +285,15 @@ img {
 }
 
 .circle-to-square-container:hover .circle-to-square {
-      border-radius: 0%;
-      top: 165px;
-      width: 300px;
-      height: 170px;
+  border-radius: 0%;
+  top: 165px;
+  width: 300px;
+  height: 170px;
 }
 
 .about .circle-to-square {
   color: #161616;
-  background-color:#fff;
+  background-color: #fff;
   border: 10px solid #111;
 }
 
@@ -313,7 +320,6 @@ footer {
   padding-top: 9rem;
 }
 
-
 @media only screen and (max-width: 600px) {
   .nav-bar {
     justify-content: center;
@@ -335,7 +341,6 @@ footer {
     font-weight: 500;
     font-size: 24px;
   }
-
 
   .welcome-section {
     background-repeat: no-repeat;
@@ -373,28 +378,26 @@ footer {
   }
 
   ul.desktop-icons > li {
-      display: unset;
+    display: unset;
   }
 
   ul.desktop-icons > li > a {
-      display: block;
-      text-align: left;
+    display: block;
+    text-align: left;
   }
 
   ul.desktop-icons > li > a > i {
-      vertical-align: middle;
-      
+    vertical-align: middle;
   }
 
   ul.desktop-icons > li > a > .icon-name {
-      font-size: calc(0.6vw + 15px);
-      width: auto;
-      vertical-align: middle;
-      display: inline-block;
-      margin-left: 10px;
-      text-align: left;
+    font-size: calc(0.6vw + 15px);
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: left;
   }
-
 
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -405,7 +408,6 @@ footer {
     font-size: 1.4rem;
     padding: 1rem;
   }
-
 
   .about-contact-section-header > h2 {
     font-size: 3rem;
@@ -419,7 +421,7 @@ footer {
     height: 300px;
     top: 80px;
   }
-  
+
   .circle-to-square {
     height: 200px;
     width: 200px;
@@ -439,7 +441,7 @@ footer {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-image: url('.//src/office.webp');
+  background-image: url(".//src/office.webp");
   background-size: cover;
 }
 
@@ -492,12 +494,11 @@ footer {
   }
 }
 
-
 .about-container {
   font-size: 20px;
   height: 100vh;
   width: 100vw;
-  background-image: url('/src/rubicks.jpg');
+  background-image: url("/src/rubicks.jpg");
   background-size: cover;
   background-position-y: center;
   color: #fff;
